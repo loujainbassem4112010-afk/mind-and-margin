@@ -1135,3 +1135,26 @@ body {
 body.cart-open {
     overflow: hidden;
 }
+
+
+
+.download-notice {
+    background-color: #FCF8F1;
+    border: 1px solid #713849;
+    color: #49383A;
+    padding: 16px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.download-notice strong {
+    color: #713849;
+    font-size: 18px;
+}
+
+.download-notice p {
+    margin: 8px 0 0;
+    line-height: 1.6;
+}
