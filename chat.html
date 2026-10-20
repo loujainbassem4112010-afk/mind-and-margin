@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Verification | MIND & MARGIN</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            background: #FCF8F1;
+            color: #49383A;
+            font-family: Arial, sans-serif;
+        }
+
+        .chat-section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px;
+            box-sizing: border-box;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            background:#FFFFFF;
+            border: 1px solid#E8DED2;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(73, 56, 58, 0.07);
+        }
+
+        .chat-header {
+            background:#f7ede7;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .chat-header h1 {
+            margin: 0 0 10px;
+            color: #713849;
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+        }
+
+        .chat-header p {
+            margin: 0;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .chat-body {
+            padding: 25px 20px;
+        }
+
+        .welcome-message {
+            background: #fff9f5;
+            padding: 16px;
+            border-radius: 12px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: #8f4b5f;
+        }
+
+        .chat-form label {
+            display: block;
+            margin: 16px 0 8px;
+            font-weight: 600;
+        }
+
+        .chat-form input,
+        .chat-form select,
+        .chat-form textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #E1D0C0;
+            border-radius: 8px;
+            background: #FFFEFC;
+            color: #713849;
+            font: inherit;
+        }
+
+        .chat-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .chat-button {
+            display: block;
+            width: 100%;
+            margin-top: 22px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #ad6c81;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .chat-button:hover {
+            background: #A77B82;
+        }
+
+        .chat-note {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #713849;
+            margin-top: 18px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #713849;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .chat-header h1 {
+                font-size: 24px;
+            }
+
+            .chat-body {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+           (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6ad7e08229e79234c7815a39/1k5dk9vm1';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+
+</head>
+
+<body>
+
+    <section class="chat-section">
+        <div class="chat-container">
+
+            <header class="chat-header">
+                <h1>MIND & MARGIN</h1>
+                <p>We're here to help with your digital purchase.</p>
+            </header>
+
+            <div class="chat-body">
+
+                <div class="welcome-message">
+                    Hello!  🤍 <br>
+                    Send us your order details below, and we'll check your
+                    payment before delivering your digital product.
+                </div>
+
+                <form class="chat-form" id="support-form">
+
+                    <label for="customer-email">Your Email</label>
+                    <input
+                        type="email"
+                        id="customer-email"
+                        name="customer-email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <label for="product">Your Product</label>
+                    <select id="product" name="product" required>
+                        <option value="">Choose your product</option>
+                        <option value="Homework Tracker">Homework Tracker — $1.99</option>
+                        <option value="Digital Student Planner">Digital Student Planner — $2.99</option>
+                        <option value="2027 Digital Planner">2027 Digital Planner — $4.99</option>
+                    </select>
+
+                    <label for="transaction">PayPal Transaction Details</label>
+                    <input
+                        type="text"
+                        id="transaction"
+                        name="transaction"
+                        placeholder="Transaction ID"
+                        required
+                    >
+
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Provide any additional details or questions you have."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="chat-button">
+                        Send Message
+                    </button>
+
+                    <p class="chat-note">
+                        Your order will be reviewed manually. Please never share
+                        your PayPal password or banking details.
+                    </p>
+
+                </form>
+
+                <a href="index.html" class="back-link">
+                    ← Back to Home Page
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        document.getElementById("support-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const customerEmail = document.getElementById("customer-email").value.trim();
+            const product = document.getElementById("product").value;
+            const transactionId = document.getElementById("transaction").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const chatMessage =
+            "Payment Verification Request\n" +
+            "Customer Email: " + customerEmail + "\n" +
+            "Product: " + product + "\n" +
+            "PayPal Transaction ID: " + transactionId + "\n" +
+            "Message: " + message;
+
+            let attempts = 0;
+
+            const waitForTawk = setInterval(function() {
+                attempts++;
+
+                if (
+                    window.Tawk_API &&
+                    typeof window.Tawk_API.setChatInputMessage === "function" &&
+                    typeof window.Tawk_API.maximize === "function"
+                ) {
+                    clearInterval(waitForTawk);
+
+                    window.Tawk_API.setChatInputMessage(chatMessage);
+                    window.Tawk_API.maximize();
+
+                } else if (attempts >= 40) {
+                    clearInterval(waitForTawk);
+                    alert("Live chat is still loading. Please refresh the page and try again.");
+                }
+            }, 250);
+         });
+    </script>
+
+
+    
+</body>
+</html>
